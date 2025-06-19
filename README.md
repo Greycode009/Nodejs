@@ -28,7 +28,12 @@ git clone https://github.com/Greycode009/Nodejs.git
 npm install
 ```
 
-3. Start the server:
+3. Set up environment variables:
+
+   - Create a `.env` file in the project root directory
+   - Add your PostgreSQL connection string as shown in the Environment Variables section
+
+4. Start the server:
 
 ```bash
 npm start
@@ -83,9 +88,19 @@ DELETE /books/:id
 
 ## Environment Variables
 
-The application uses the following environment variables:
+The application uses environment variables for database configuration. Create a `.env` file in the root directory with the following:
 
-- Database connection string is configured in database/connection.js
+```env
+CS=your_postgresql_connection_string
+```
+
+Example of the connection string format:
+
+```env
+CS=postgresql://username:password@host:port/database_name
+```
+
+Note: Make sure to replace the values with your actual PostgreSQL database credentials.
 
 ## Technologies Used
 
