@@ -19,7 +19,7 @@ A RESTful API for managing books built with Node.js, Express, and PostgreSQL usi
 1. Clone the repository:
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Greycode009/Nodejs.git
 ```
 
 2. Install dependencies:
