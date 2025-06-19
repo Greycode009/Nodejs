@@ -31,7 +31,6 @@ app.delete("/books/:id",(req,res)=>{
 })
 
 
-//postgresql://postgres.lvlbgzfpqzwbbmnronqu:29dipeshbook@ @aws-0-ap-south-1.pooler.supabase.com:6543/postgres
 app.listen(3000,()=>{
     console.log('Server is running on port 3000');
 })
