@@ -15,4 +15,16 @@ sequelize.authenticate()
 db.Sequelize = Sequelize
 db.sequelize = sequelize
 
+db.books = require("./models/book.models")(sequelize, DataTypes)
+db.users = require("./models/user.model")(sequelize,DataTypes)
+
+//migrate code here
+//force:true le data lai udaidinxa but    alter:true le column matra change garxa data change hudaina
+//kei kei changes garda matra alter true garne 
+sequelize.sync({ alter: false }).then(() => {
+  console.log("Database synced successfully");
+});
+
+
+
 module.exports = db
